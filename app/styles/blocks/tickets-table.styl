@@ -1,0 +1,53 @@
+.tickets-table
+	width 100%
+	
+	tr
+		&:first-child
+			border-bottom 2px solid #1e1e1e
+			td
+				text-transform uppercase
+				font-weight 600
+				+to-width(767px)
+					font-size 10px
+					font-weight 700
+		td
+			padding 10px 0
+			border-bottom 1px solid #e6e6e6
+			font-size 13px
+			line-height 15px
+			padding-right 50px
+			+to-width(767px)
+				padding-right 30px
+				font-size 12px
+			
+			&.td-space
+				+to-width(767px)
+					display none
+			&.td-price
+				padding-right 0
+				width 35%
+				+to-width(1100px)
+					width auto
+				+to-width(767px)
+					display none
+			&.td-right
+				width 131px
+				padding-right 0
+			
+			&.more-padding
+				padding 15px 0
+			&:first-child
+				font-weight 600
+	
+	&__button
+		padding 5px 10px
+		line-height 20px
+		letter-spacing 0.5px
+		font-size 11px
+		text-transform uppercase
+		color white
+		background-color #ee3522
+		opacity 1
+		t()
+		&:hover
+			opacity 0.8

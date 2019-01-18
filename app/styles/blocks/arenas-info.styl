@@ -1,0 +1,58 @@
+.arenas-info
+	padding-top 60px
+	padding-bottom 120px
+	background-color #404041
+	background-size cover
+	background-position center
+	position relative
+	&:before
+		content ''
+		position absolute
+		left 0
+		top 0
+		right 0
+		bottom 0
+		background-color rgba(19, 23, 25, .7)
+	+to-width(767px)
+		padding-bottom 30px
+	
+	&__headering
+		text-align center
+		color white
+	
+	&__items
+		padding-top 90px
+		display flex
+		justify-content space-around
+		+to-width(767px)
+			flex-direction column
+			padding-top 70px
+	
+	&-item
+		display flex
+		flex-direction column
+		align-items center
+		+to-width(767px)
+			padding-bottom 40px
+		
+		&__icon
+			padding-bottom 18px
+			+to-width(767px)
+				padding-bottom 10px
+				img
+					width 70px
+		
+		&__number
+			font-size 50px
+			line-height 70px
+			font-family light
+			color white
+			+to-width(767px)
+				font-size 40px
+				padding-bottom 10px
+		
+		&__text
+			font-size 17px
+			line-height 1.47
+			color white
+			

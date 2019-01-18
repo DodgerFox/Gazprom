@@ -1,0 +1,62 @@
+.contact-block
+	padding-top 30px
+	border-top solid 1px #e0e5ed
+	+to-width(767px)
+		padding-bottom 10px
+	
+	&__wrap
+		padding-top 34px
+		display flex
+		flex-wrap wrap
+	
+	&-item
+		width 25%
+		padding-bottom 60px
+		padding-right 35px
+		+to-width(920px)
+			padding-right 10px
+		+to-width(767px)
+			width 50%
+			padding-bottom 30px
+		+to-width(425px)
+			width 100%
+		&__title
+			font-size 15px
+			font-family semibold
+			color #1e1e1e
+			padding-bottom 10px
+			line-height 1.33
+			min-height 40px
+		
+		&__text
+			font-size 13px
+			line-height 1.54
+			padding-bottom 5px
+		
+		&__link
+			display flex
+			padding-top 10px
+			opacity 1
+			t()
+			&:hover
+				opacity 0.7
+			
+			&-text
+				letter-spacing 0.5px
+				line-height 1.36
+				font-family semibold
+				color #13b5ea
+				font-size 11px
+				text-transform uppercase
+			
+		&__icon
+			margin-right 8px
+		
+		&__wrap
+			padding-top 5px
+
+		&__name
+			font-size 13px
+			line-height 1.15
+			color #999
+			padding-bottom 5px

@@ -1,0 +1,55 @@
+.tickets-description
+	padding-top 40px
+	padding-bottom 30px
+	+to-width(767px)
+		padding-bottom 65px
+	
+	&__body
+		border-top 1px solid #e0e5ed
+		margin-top 23px
+		padding-top 30px
+		display flex
+		justify-content space-between
+		+to-width(767px)
+			flex-direction column
+	
+	&__content
+		padding-right 50px
+		+to-width(992px)
+			padding-right 20px
+	
+	&__title
+		padding-bottom 25px
+		font-size 17px
+		line-height 25px
+		font-weight 600
+		+to-width(767px)
+			padding-bottom 20px
+			font-size 15px
+	
+	&__text
+		padding-bottom 30px
+		line-height 25px
+		font-size 15px
+		+to-width(767px)
+			font-size 13px
+	
+	&-ticket
+		max-width 280px
+		padding-top 50px
+		+to-width(992px)
+			max-width 167px
+		+to-width(767px)
+			max-width 300px
+			padding-top 0
+		&__image
+			+to-width(992px)
+				width 167px
+			+to-width(767px)
+				width auto
+
+		&__text
+			color #999999
+			line-height 15px
+			font-size 11px
+			margin-top 10px	

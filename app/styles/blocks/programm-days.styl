@@ -1,0 +1,54 @@
+.programm-days
+	padding-top 40px
+	padding-bottom 120px
+	+to-width(767px)
+		padding-bottom 60px
+	+to-width(520px)
+		padding-top 20px
+	
+	&__text
+		font-size 13px
+		
+	&-item
+		padding-top 30px
+		padding-bottom 10px
+		
+		&__title
+			font-size 11px
+			color #1e1e1e
+			line-height 1.36
+			font-family bold
+			text-transform uppercase
+			padding-bottom 15px
+		
+		&__table
+			border-top solid 1px #e6e6e6
+			font-size 13px
+			line-height 1.54
+			color #1e1e1e
+			width 100%
+			+to-width(767px)
+				font-size 10px
+			tr
+				&:first-child
+					margin-top 10px
+					td
+						padding-top 15px
+						+to-width(520px)
+							padding-top 10px
+				td
+					padding 5px
+					&:first-child
+						padding-left 0
+						white-space nowrap
+					&:last-child
+						white-space nowrap
+						padding-right 0
+					svg
+						margin-right 10px
+						+to-width(767px)
+							display none
+		
+		&__wrap
+			display flex
+			align-items center

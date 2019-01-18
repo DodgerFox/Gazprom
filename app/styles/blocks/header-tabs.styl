@@ -1,0 +1,47 @@
+.header-tabs
+	padding-top 35px
+	background-color #272F36
+	background-size cover
+	background-position center
+	position relative
+	&:before
+		content ''
+		position absolute
+		left 0
+		top 0
+		right 0
+		bottom 0
+		background-color rgba(19, 23, 25, .9)
+	&__headering
+		color white
+		+to-width(767px)
+			font-size 25px
+	&-list
+		margin-top 36px
+		display flex
+	
+		&__item
+			width 150px
+			height 40px
+			border-radius 5px 5px 0px 0px
+			background-color #DCDCDC
+			margin-right 5px
+			t()
+			
+			&_active
+				background-color white
+			
+			&:hover
+				background-color white
+		
+		&__link
+			font-size 12px
+			font-family semibold
+			color #1e1e1e
+			width 100%
+			height 40px
+			display flex
+			align-items center
+			justify-content center
+			+to-width(460px)
+				font-size 9px

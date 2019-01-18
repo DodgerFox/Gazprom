@@ -1,0 +1,11 @@
+/bower_components
+/node_modules
+/public/storage
+/public/uploads
+/public/pdf
+/storage/*.key
+/vendor
+/psd
+_ide_helper.php
+.env
+.idea

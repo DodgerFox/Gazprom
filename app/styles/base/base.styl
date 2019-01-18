@@ -1,0 +1,109 @@
+body
+	position relative
+	height 100vh
+	min-width 320px
+	min-height 400px
+	width 100%
+	color #1e1e1e
+	transition 0.5s all
+	background-color white
+	
+html
+	font-family 'Open Sans'
+	font-weight normal
+	font-size 62.5%
+	line-height 1.4
+	letter-spacing 0
+	min-width 320px
+	margin-left auto
+	margin-right auto
+
+
+section
+	font-size 1.6rem
+
+
+.box
+	position relative
+	padding 0 20px
+	max-width 1290px
+	width 100%
+	margin-left auto
+	margin-right auto
+	+to-width(1300px)
+		width 100%
+	+to-width(767px)
+		padding 0 10px
+
+.headering
+	font-size 35px
+	line-height 1.14
+	font-family light
+	color #1e1e1e
+	+to-width(767px)
+		font-size 25px
+	&-big
+		font-size 45px
+		line-height 1.29
+		font-family light
+		color #1e1e1e
+	&-mini
+		font-size 30px
+		color #1e1e1e
+		+to-width(425px)
+			font-size 21px
+
+.simple-text
+	font-size 15px
+	line-height 1.67
+	color #1e1e1e
+	font-family regular
+
+.wrapper
+	display flex
+	flex-direction column
+	min-height 100vh
+
+.main
+	flex 1
+	position relative
+	z-index 2
+
+.hidden
+	display none!important
+
+.page-header
+	padding-top 40px
+	padding-bottom 24px
+
+
+.slick-arrow
+	user-select none
+	-webkit-user-select none
+	-moz-user-select none
+	-ms-user-select none
+	-o-user-select none
+
+.button-more
+	background-color #13b5ea
+	height 40px
+	padding 0 15px
+	display flex
+	justify-content center
+	align-items center
+	font-size 11px
+	line-height 1.82
+	letter-spacing 0.5px
+	color white
+	cursor pointer
+	text-transform uppercase
+	cursor pointer
+	t()
+	&__icon
+		margin-left 8px
+		transition transform 0.3s
+		transform translateX(0)
+
+	&:hover
+		.button-more__icon
+			transform translateX(5px)

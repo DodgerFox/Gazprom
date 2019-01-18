@@ -1,0 +1,74 @@
+// about-files
+
+.about-files
+	padding-bottom 90px
+	&__wrap
+		display flex
+		flex-wrap wrap
+		margin-left -10px
+		margin-right -10px
+	
+	&__item
+		width 33.333%
+		+to-width(767px)
+			width 100%
+		&_bottom
+			.about-files__container
+				display flex
+				flex-direction column
+				justify-content flex-end
+			.about-files__image
+				top 0
+				left 0
+				bottom initial
+				right initial
+			.about-files__download
+				padding-bottom 0
+	&__container
+		margin 10px
+		padding 30px
+		height 270px
+		position relative
+		background-color #fafafa
+		overflow hidden
+	
+	&__image
+		position absolute
+		bottom 0
+		right 0
+		right initial
+			
+
+	&__title
+		font-size 19px
+		font-weight 600
+		line-height 25px
+		padding-bottom 15px
+		position relative
+	
+	&__download
+		display flex
+		align-items flex-start
+		padding-bottom 26px
+		position relative
+		
+		&-icon
+			margin-top 2px
+
+		&-wrap
+			padding-left 11px
+		
+		&-link
+			text-transform uppercase
+			color #13b5ea
+			font-size 13px
+			font-weight 600
+			padding-bottom 4px
+			display block
+		
+		&-text
+			color #999999
+			font-size 13px
+			line-height 15px
+
+// about-files end

@@ -1,0 +1,157 @@
+.support-page
+	padding-top 40px
+	padding-bottom 60px
+	+to-width(767px)
+		padding-bottom 0
+	
+	&__header
+		padding-bottom 24px
+		border-bottom solid 1px #e0e5ed
+	
+	&__text
+		margin-top 40px
+		padding-bottom 30px
+	
+	&__body
+		display flex
+		flex-wrap wrap
+		+to-width(475px)
+			margin-left -10px
+			margin-right -10px
+	
+	&-table
+		&__wrap
+			padding-right 80px
+			padding-bottom 60px
+			width 50%
+			&:last-child
+				padding-right 0
+			+to-width(1023px)
+				padding-right 40px
+			+to-width(767px)
+				width 100%
+				padding-right 0
+			
+		
+		&__header
+			padding-bottom 20px
+			border-bottom solid 2px #13b5ea
+			+to-width(767px)
+				padding-bottom 5px
+			+to-width(475px)
+				padding-left 10px
+			&_red
+				border-bottom solid 2px #ee3522
+			
+			&-title
+				font-size 30px
+				font-family light
+				color #1e1e1e
+				+to-width(767px)
+					font-size 21px
+					font-family regular
+					line-height 1.43
+.support
+	&-table
+		&-header
+			padding-bottom 15px
+			padding-top 20px
+			padding-left 10px
+			padding-right 10px
+			display flex
+			border-bottom solid 1px #e6e6e6
+			
+			&__item
+				font-size 12px
+				font-family bold
+				line-height 1.25
+				margin-right 22px
+				text-transform uppercase
+				+to-width(767px)
+					font-size 10px
+		&-item
+			width 100%
+			height 50px
+			padding 10px
+			border-bottom solid 1px #e6e6e6
+			display flex
+			justify-content space-between
+			font-size 13px
+			color #1e1e1e
+			
+			
+			&__left
+				display flex
+				align-items center
+				height 100%
+			
+			&__logo
+				margin-right 15px
+			
+			&__number
+				margin-right 10px
+				min-width 15px
+			
+			&__button
+				background-color #f0f0f0
+				width 123px
+				height 30px
+				border-radius 1px
+				position relative
+				overflow hidden
+				t()
+				&_clicked
+					.support-table-item-share
+						transform translateY(-100%)
+					.support-table-item-like
+						transform translateY(-100%)
+				&:hover
+					background-color #f4f4f4
+			
+			&-like
+				display flex
+				align-items center
+				justify-content center
+				height 100%
+				cursor pointer
+				transition transform 0.4s				
+				&__text
+					font-size 11px
+					line-height 1.82
+					letter-spacing 0.5px
+					color #6a6a6a
+					font-family semibold
+					text-transform uppercase
+				
+				&__icon
+					margin-left 11px
+			
+			&-share
+				display flex
+				align-items center
+				justify-content center
+				width 100%
+				height 100%
+				padding-top 1px
+				transition transform 0.4s				
+				&__icon
+					margin-right 15px
+					opacity 1
+					t()
+					&:last-child
+						margin-right 0
+					
+					&:hover
+						opacity 0.7
+			
+			&-result
+				height 100%
+				display flex
+				align-items center
+				
+				&__icon
+					margin-left 8px
+				
+				&__number
+					font-size 15px
+					font-family semibold

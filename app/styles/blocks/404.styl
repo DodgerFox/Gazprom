@@ -1,0 +1,49 @@
+.fall-page
+	height 100vh
+	display flex
+	justify-content center
+	align-items center
+	background-color #333
+	color white
+	text-align center
+	position relative
+	background-image url('../images/404_bg.jpg')
+	background-position center
+	background-size cover
+	&:before
+		content ''
+		left 0px
+		right 0px
+		top 0px
+		bottom 0px
+		position absolute
+		background-color rgba(0, 0, 0, .6)
+	
+	&__container
+		position relative
+		
+	&__number
+		font-size 80px
+		padding-bottom 10px
+		+to-width(767px)
+			font-size 60px
+	
+	&__title
+		font-size 35px
+		line-height 45px
+		font-weight light
+		padding-bottom 15px
+		+to-width(767px)
+			font-size 25px
+	
+	&__text
+		font-size 17px
+		line-height 25px
+		+to-width(767px)
+			font-size 13px
+			line-height 20px
+		a
+			color #13b5ea
+			t()
+			&:hover
+				color #2dbfef

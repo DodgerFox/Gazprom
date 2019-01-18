@@ -1,0 +1,38 @@
+.arenas-media
+	padding 60px 0
+	
+	&__wrap
+		padding-top 25px
+		display flex
+		margin-left -5px
+		margin-right -5px
+		flex-wrap wrap
+		
+	&__item
+		width 20%
+		padding 5px
+		+to-width(1023px)
+			width 25%
+		+to-width(920px)
+			width 33.333%
+		+to-width(768px)
+			width 50%
+		+to-width(520px)
+			width 33.333%
+		
+	&__container
+		background-color #f0f0f0
+		height 180px
+		width 100%
+		display flex
+		justify-content center
+		align-items center
+		background-size cover
+		background-position center
+		+to-width(520px)
+			height 70px
+		
+	&__icon
+		img
+			+to-width(520px)
+				max-width 28px

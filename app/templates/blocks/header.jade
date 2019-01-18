@@ -1,0 +1,48 @@
+header.header.wow.fadeInDown(data-wow-duration="1s" data-wow-delay="0s")
+	.box
+		.header__logo
+			a(href="#").header__logo-link
+				+icon('logo', 163, 126)
+			a(href="#").header-mobile__logo
+			.header-mobile__menu
+		.header__wrap
+			.header-mobile__close
+			.header__info
+				.header__info-wrap
+					.header__contacts.header-contacts
+						a(href="tel: 88007002644").header-contacts__item
+							+icon('phone', 22, 22)
+							p.header-contacts__item-text 8 800-700-2644
+						a(href="mailto: support@imr.word").header-contacts__item
+							+icon('mail', 24, 18)
+							p.header-contacts__item-text support@imr.word
+						a(href="viber://add?number=imr_support").header-contacts__item
+							+icon('phone-2', 24, 23)
+							p.header-contacts__item-text imr_support
+
+					.header__counter <span>1080</span> зарегистрировано
+				
+			nav.header__nav.header-nav
+				ul.header-nav__items
+					li.header-nav__item.current-menu-item
+						a(href="https://imr.world/about/").header-nav__link О компании
+					li.header-nav__item
+						a(href="https://imr.world/analytics/").header-nav__link Аналитика
+					li.header-nav__item
+						a(href="https://imr.world/markets/").header-nav__link Рынки
+					li.header-nav__item
+						a(href="https://imr.world/investideas/").header-nav__link Инвестидеи
+					li.header-nav__item
+						a(href="https://imr.world/chats/").header-nav__link Чаты
+					li.header-nav__item
+						a(href="https://imr.world/learning/").header-nav__link Обучение
+		.header__panel-wrap
+			.header__panel
+				.header__lang
+					a(href="#").header__lang-item.header__lang-item--active RU
+					a(href="#").header__lang-item EN
+				.header__logout
+					a(href="#").header__logout-link
+						.header__logout-icon
+			a(href="#").header__cabinet.header-cabinet
+				p.header-cabinet__text Личный </br> кабинет

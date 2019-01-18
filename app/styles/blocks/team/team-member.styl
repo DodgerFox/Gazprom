@@ -1,0 +1,123 @@
+.team-members
+	padding-bottom 50px
+	&__header
+		display flex
+		padding-bottom 13px
+		border-bottom solid 1px #e0e5ed
+		+to-width(520px)
+			flex-direction column
+	&__tabs
+		margin-left 50px
+		display flex
+		align-items flex-end
+		+to-width(786px)
+			margin-left 25px
+		+to-width(520px)
+			margin-left 0
+			margin-top 25px
+	
+	&__item
+		margin-right 15px
+		position relative
+		font-size 15px
+		font-family semibold
+		color rgba(0, 0, 0, .2)
+		cursor pointer
+		background-color transparent
+		border none
+		t()
+		&:last-child
+			margin-right 0
+		&:before
+			content ''
+			position absolute
+			height 2px
+			width 90%
+			left 5%
+			bottom -14px
+			background-color #00a3e3
+			opacity 0
+			t()
+			+to-width(560px)
+				left 0
+				width 100%
+		&_active
+			color #13b5ea
+			&:before
+				opacity 1
+		&:hover
+			color #13b5ea
+		+to-width(560px)
+			font-size 12px
+		+to-width(520px)
+			margin-right 10px
+	
+	&__items
+		margin-left -10px
+		margin-right -10px
+		display flex
+		flex-wrap wrap
+		padding-top 15px
+		+to-width(1023px)
+			margin-left -5px
+			margin-right -5px
+	
+	&-item
+		width 16.6666%
+		padding 10px
+		+to-width(1280px)
+			width 20%
+		+to-width(1023px)
+			width 25%
+			padding 5px
+		+to-width(786px)
+			width 33.333%
+		+to-width(560px)
+			width 50%
+		&__container
+			background-color #f0f0f0
+		
+		&__image
+			height 188px
+			width 100%
+			background-size cover
+			background-position top center
+			+to-width(1023px)
+				height 158px
+		
+		&__wrap
+			width 100%
+			padding-top 16px
+			padding-bottom 13px
+			background-color #1c262c
+			text-align center
+			position relative
+		
+		&__number
+			padding 3px 6px
+			line-height 1.36
+			background-color #ee3522
+			font-size 11px
+			color white
+			font-family bold
+			&-wrap
+				width 100%
+				position absolute
+				display flex
+				justify-content center
+				bottom 52px
+
+		&__title
+			font-size 13px
+			font-family semibold
+			line-height 1.54
+			padding-bottom 1px
+			color white
+			+to-width(560px)
+				font-size 11px
+		
+		&__text
+			opacity 0.5
+			color white
+			font-size 11px
+			line-height 1.36

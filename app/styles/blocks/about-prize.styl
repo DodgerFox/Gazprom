@@ -1,0 +1,100 @@
+// about-prize
+
+.about-prize
+	width 100%
+	min-height 600px
+	background-color #333
+	background-size cover
+	background-position center
+	padding-top 60px
+	color white
+	position relative
+	overflow hidden
+	&:before
+		content ''
+		left 0
+		top 0
+		right 0
+		bottom 0
+		position absolute
+		background-color rgba(0, 0, 0, .5)
+	+to-width(767px)
+		min-height initial
+	
+	&__wrap
+		display flex
+	
+	&__items
+		padding-bottom 100px
+		+to-width(767px)
+			padding-bottom 40px
+
+	&__image
+		max-width 367px
+		height auto
+		+to-width(767px)
+			height 375px
+		+to-width(560px)
+			height 100%
+		&-wrap
+			width 48%
+			display flex
+			align-items flex-end
+			justify-content center
+			+to-width(767px)
+				position absolute
+				right 0
+				height 100%
+				width auto
+			+to-width(560px)
+				right -228px
+	&__content
+		width 52%
+		padding-left 40px
+		padding-right 80px
+		padding-top 30px
+		+to-width(1200px)
+			padding-right 0
+			padding-left 0
+		+to-width(767px)
+			width 75%
+			max-width 580px
+			position relative
+			z-index 2
+		+to-width(500px)
+			padding-top 0px
+			width 90%
+	
+	&__title
+		color white
+		font-size 35px
+		line-height 45px
+		font-weight 300
+		padding-bottom 40px
+		+to-width(500px)
+			font-size 25px
+			line-height 30px
+			padding-bottom 30px
+	
+	&-item
+		display flex
+		padding-bottom 20px
+		
+	&__number
+		background-color #ee3124
+		border-radius 50%
+		margin-right 25px
+		width 27px
+		min-width 27px
+		height 27px
+		display flex
+		justify-content center
+		align-items center
+		font-size 13px
+		font-weight 700
+	
+	&__text
+		font-size 15px
+		line-height 25px
+
+// about-prize end

@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block head
+
+block content
+	.main
+		include ../blocks/inmates-section
+		include ../blocks/read-next-about
+
+
+	script(src="assets/scripts/libs/jquery/dist/jquery.min.js")
+	script(src='assets/scripts/libs/slick/slick/slick.min.js')
+
+	script(src="assets/scripts/about-slider.js")

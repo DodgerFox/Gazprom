@@ -1,0 +1,55 @@
+.map-site
+	padding-top 40px
+	padding-bottom 95px
+	+to-width(767px)
+		padding-bottom 30px
+		padding-top 20px
+	
+	&__wrap
+		display flex
+		flex-wrap wrap
+		border-top 1px solid #e0e5ed
+		padding-top 35px
+		margin-top 23px
+		+to-width(1024px)
+			padding-top 45px
+		+to-width(767px)
+			padding-top 20px
+			margin-top 15px
+	
+	&-item
+		width 25%
+		padding-left 40px
+		+to-width(1024px)
+			padding-left 20px
+		+to-width(767px)
+			width 50%
+			&:nth-child(3)
+				padding-left 0
+		+to-width(520px)
+			width 100%
+			padding-left 0
+		&:first-child
+			padding-left 0
+		
+		&__list
+			padding-bottom 30px
+		
+		&__item
+			line-height 15px
+			padding-bottom 10px
+			font-size 13px
+			&:last-child
+				padding-bottom 0
+			a
+				color #1e1e1e
+				t()
+				
+				&:hover
+					color #13b5ea
+			
+			&_title
+				font-weight 600
+				padding-bottom 15px
+				line-height 20px
+				font-size 15px

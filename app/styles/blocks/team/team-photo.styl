@@ -1,0 +1,91 @@
+.team-photos
+	padding-bottom 60px
+	&__header
+		display flex
+		justify-content space-between
+		align-items flex-end
+	
+	&__wrap
+		margin-left -10px
+		margin-right -10px
+		padding-top 25px
+		display flex
+		flex-wrap wrap
+		+to-width(640px)
+			margin-right -5px
+			margin-left -5px
+	
+	&-item
+		width 25%
+		padding 0 10px
+		+to-width(992px)
+			width 50%
+			padding-bottom 30px
+		+to-width(640px)
+			padding 0 5px
+			padding-bottom 30px
+		
+		&__image
+			background-color #f0f0f0
+			background-size cover
+			background-position center
+			width 100%
+			height 166px
+			position relative
+			display block
+			+to-width(475px)
+				height 82px
+		
+		&__wrap
+			width 100%
+			position absolute
+			bottom 10px
+			left 10px
+		
+		&__count
+			display flex
+		
+		&__icon
+			width 25px
+			height 20px
+			background-color #c41230
+			display flex
+			justify-content center
+			align-items center
+
+		&__number
+			display flex
+			justify-content center
+			align-items center
+			width 25px
+			height 20px
+			background-color #ee3522
+			font-size 11px
+			font-family bold
+			color white
+		
+		&__title
+			margin-top 10px
+			min-height 40px
+			overflow hidden
+			line-height 1.54
+			color #1e1e1e
+			font-size 13px
+			font-family semibold
+			display block
+		
+		&__date
+			margin-top 5px
+			line-height 1.15
+			font-size 13px
+			color #999999
+	
+	&__button-more
+		+to-width(992px)
+			display none
+		
+		&-mobile
+			width 100%
+			display none
+			+to-width(992px)
+				display flex

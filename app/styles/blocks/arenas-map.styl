@@ -1,0 +1,51 @@
+.arenas-map
+	padding-top 60px
+	
+	&__wrap
+		padding-top 30px
+		display flex
+		+to-width(1023px)
+			flex-direction column
+	
+	&__map
+		height 468px
+		min-width 59.7%
+		background-color #f0f0f0
+		+to-width(767px)
+			height 460px
+		+to-width(520px)
+			height 185px
+		
+
+	&__content
+		padding-left 45px
+		min-width 40.3%
+		+to-width(1280px)
+			padding-left 25px
+		+to-width(1023px)
+			padding-top 30px
+			padding-left 0 
+
+	&__text
+		padding-bottom 25px
+		font-size 15px
+		line-height 1.67
+		color #1e1e1e
+		+to-width(1023px)
+			padding-bottom 20px
+	
+	&-links__item
+		display block
+		width max-content
+		font-size 13px
+		line-height 1.15
+		letter-spacing 0.5px
+		color #13b5ea
+		padding-bottom 15px
+		cursor pointer
+		opacity 1
+		text-transform uppercase
+		font-family semibold
+		t()
+		&:hover
+			opacity 0.7
